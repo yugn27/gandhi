@@ -428,8 +428,64 @@
      </div>
 <div style="background: #f7f7f7;">
     <div class="ui container center align vertical stripe heading-container">
-	    <iframe width="100%" height="85%" src="https://datastudio.google.com/embed/reporting/beeb8fa3-13dc-4d4e-aac2-39302d77bbe2/page/4gGUB" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-		<div class="ind-instructions-wrap">	
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+
+
+				<button onclick="INDUSDBUY()">
+				IND/USD (BUY)</button>
+				<button onclick="INDUSDSELL()">
+				IND/USD (SELL)</button>
+				<button onclick="ContractBalanceUSD()">Contract Balance (USD)</button>
+				<button onclick="ContractBalanceETH()">Contract Balance (ETH)</button>
+				<button onclick="TotalINDTokens()">Total IND Tokens</button>
+				<br>
+
+				<iframe id="myframe" width="100%" height="80%" src="https://datastudio.google.com/embed/reporting/beeb8fa3-13dc-4d4e-aac2-39302d77bbe2/page/4gGUB" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+
+
+
+				<script>
+				function INDUSDBUY() {
+				  document.getElementById("myframe").src = "https://datastudio.google.com/embed/reporting/beeb8fa3-13dc-4d4e-aac2-39302d77bbe2/page/4gGUB";
+				}
+				function INDUSDSELL() {
+				  document.getElementById("myframe").src = "https://datastudio.google.com/embed/u/0/reporting/beeb8fa3-13dc-4d4e-aac2-39302d77bbe2/page/yxGUB";
+				}
+				function ContractBalanceUSD() {
+				  document.getElementById("myframe").src = "https://datastudio.google.com/embed/u/0/reporting/beeb8fa3-13dc-4d4e-aac2-39302d77bbe2/page/N0GUB";
+				}
+
+				function ContractBalanceETH() {
+				  document.getElementById("myframe").src = "https://datastudio.google.com/embed/u/0/reporting/beeb8fa3-13dc-4d4e-aac2-39302d77bbe2/page/v5GUB";
+				}
+
+				function TotalINDTokens() {
+				  document.getElementById("myframe").src = "https://datastudio.google.com/embed/u/0/reporting/beeb8fa3-13dc-4d4e-aac2-39302d77bbe2/page/f6GUB";
+				}
+
+				</script>
+
+
+
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    <div class="ind-instructions-wrap">	
 			
 			<p>•	First of all, install MetaMask <a href="https://metamask.io/">here</a> and put some Ether in it.</p>
 			<p>•	To buy IND, simply click the "Buy Tokens" button and enter the amount of Ether you want to convert to IND, based on the current Buy Price. When confirming the transaction on MetaMask, be sure to use a high enough gas price so that the price doesn't change drastically while the transaction is in progress. Here you can view recommended gas prices. Buying coins will increase both the Buy Price and Sell Price with 0.0000001 ETH per bought coin once the transaction is complete.</p>
